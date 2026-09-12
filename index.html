@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Regal Cafe, Lounge &amp; Restra — North Indian Dining &amp; Lounge | 4.7★ Rated</title>
+<meta name="description" content="Royal Regal Cafe, Lounge & Restra — premium North Indian dining and lounge experience. Rated 4.7 by 1,093 guests. Open daily 11 AM–11 PM. Call 093197 61115 to reserve your table.">
+<meta property="og:title" content="Royal Regal Cafe, Lounge & Restra — Where Royal Ambience Meets Exceptional Taste">
+<meta property="og:description" content="North Indian cuisine · Premium lounge ambience · Rated 4.7 by 1,093 guests · Open daily 11 AM–11 PM">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS & RESET ============ */
+:root{
+  --bg:#06070d;
+  --bg-2:#0a0c16;
+  --bg-3:#0d1020;
+  --panel:rgba(255,255,255,.035);
+  --line:rgba(255,255,255,.09);
+  --gold:#d5b36b;
+  --gold-soft:#ecd9a8;
+  --gold-dim:rgba(213,179,107,.35);
+  --blue:#5b8cff;
+  --purple:#9a6bff;
+  --magenta:#ff5ad1;
+  --text:#eef0f6;
+  --muted:#9aa0b4;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Outfit',Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+html,body{overflow-x:hidden}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  font-weight:400;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;background:none;border:0;color:inherit;cursor:pointer}
+ul{list-style:none}
+::selection{background:rgba(154,107,255,.45);color:#fff}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#07080f}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#2a2f45,#3a2c4e);border-radius:8px;border:2px solid #07080f}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;z-index:2000;background:var(--gold);color:#1b1406;padding:10px 20px;border-radius:8px;font-weight:600}
+.skip:focus{left:8px}
+
+/* film grain */
+.noise{position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");}
+
+/* scroll progress */
+.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:1600;
+  background:linear-gradient(90deg,var(--blue),var(--purple),var(--magenta));
+  box-shadow:0 0 12px rgba(154,107,255,.7)}
+
+/* ============ SHARED ============ */
+.container{max-width:1200px;margin:0 auto;padding:0 28px}
+.section{padding:112px 0;position:relative}
+.section-tight{padding:88px 0}
+.kicker{display:inline-flex;align-items:center;gap:12px;font:600 11px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:'';width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.kicker.center::after{content:'';width:34px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.sec-head{margin-bottom:56px;max-width:720px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-title{font:600 clamp(2.1rem,4.4vw,3.4rem)/1.12 var(--serif);letter-spacing:.01em;margin:16px 0 18px;color:var(--text)}
+.sec-title em{font-style:italic;font-weight:500;color:var(--gold-soft)}
+.grad-text{background:linear-gradient(92deg,#7ba2ff 0%,#a97bff 48%,#ff6fd4 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-sub{color:var(--muted);font-size:16.5px;font-weight:300;max-width:620px}
+.sec-head.center .sec-sub{margin:0 auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;
+  font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s,background .35s;white-space:nowrap}
+.btn svg{width:16px;height:16px}
+.btn-gold{background:linear-gradient(135deg,#f2dfa9,#d3ab63 52%,#b78c44);color:#211806;box-shadow:0 12px 32px -12px rgba(211,171,99,.55)}
+.btn-gold::after{content:'';position:absolute;top:0;left:-90%;width:55%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-22deg);transition:left .65s ease}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 44px -12px rgba(211,171,99,.7)}
+.btn-gold:hover::after{left:140%}
+.btn-ghost{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.16);color:#f1f2f8;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:rgba(154,107,255,.65);box-shadow:0 0 30px -6px rgba(154,107,255,.4)}
+.btn-line{padding:12px 24px;font-size:12px}
+
+.glass{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* decorative glows */
+.glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:0}
+.g-blue{background:radial-gradient(circle,rgba(91,140,255,.22),transparent 70%)}
+.g-purple{background:radial-gradient(circle,rgba(154,107,255,.2),transparent 70%)}
+.g-magenta{background:radial-gradient(circle,rgba(255,90,209,.14),transparent 70%)}
+.gold-hr{height:1px;background:linear-gradient(90deg,transparent,rgba(213,179,107,.5),transparent);border:0}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,.74,.22,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.12s}
+.reveal[data-delay="2"]{transition-delay:.24s}
+.reveal[data-delay="3"]{transition-delay:.36s}
+.reveal[data-delay="4"]{transition-delay:.48s}
+
+/* stars */
+.stars{position:relative;display:inline-block;line-height:0}
+.stars svg{width:17px;height:17px;display:inline-block}
+.stars .row{display:flex;gap:3px}
+.stars .base{color:rgba(255,255,255,.22)}
+.stars .fill{color:var(--gold);position:absolute;inset:0;overflow:hidden;white-space:nowrap}
+.stars.small svg{width:13px;height:13px}
+
+/* ============ HEADER ============ */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1500;transition:background .4s,border-color .4s,padding .35s;padding:18px 0;border-bottom:1px solid transparent}
+.site-header.scrolled{background:rgba(7,8,15,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07);padding:10px 0}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand-mark{width:46px;height:46px;border:1px solid var(--gold-dim,rgba(213,179,107,.45));border-radius:50%;display:grid;place-items:center;color:var(--gold);flex:none;background:rgba(213,179,107,.06)}
+.brand-mark svg{width:21px;height:21px}
+.brand-name{font:600 19px/1.05 var(--serif);letter-spacing:.14em;text-transform:uppercase;color:#f4f5f9}
+.brand-sub{font:600 8.5px/1 var(--sans);letter-spacing:.36em;text-transform:uppercase;color:rgba(213,179,107,.85);margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font:600 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#b9bdcc;position:relative;padding:6px 0;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:linear-gradient(90deg,var(--gold),var(--magenta));transition:width .35s}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.hamburger{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.16);border-radius:50%;position:relative;cursor:pointer;background:rgba(255,255,255,.04)}
+.hamburger span{position:absolute;left:13px;width:20px;height:1.6px;background:#e9eaf1;transition:.35s;border-radius:2px}
+.hamburger span:nth-child(1){top:18px}
+.hamburger span:nth-child(2){top:23px}
+.hamburger span:nth-child(3){top:28px}
+.hamburger.open span:nth-child(1){top:23px;transform:rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){top:23px;transform:rotate(-45deg)}
+
+/* mobile menu */
+.mobile-menu{position:fixed;inset:0;z-index:1400;background:rgba(5,6,11,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;justify-content:center;padding:90px 34px 40px;
+  opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.mobile-menu.open{opacity:1;visibility:visible}
+.mobile-menu::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent)}
+.mm-nav{display:flex;flex-direction:column;gap:6px;margin-bottom:36px}
+.mm-nav a{font:500 clamp(1.8rem,7vw,2.5rem)/1.3 var(--serif);color:#e8e9f0;display:flex;align-items:baseline;gap:16px;padding:6px 0;
+  opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s,color .3s}
+.mobile-menu.open .mm-nav a{opacity:1;transform:none}
+.mm-nav a:hover{color:var(--gold-soft)}
+.mm-nav a span{font:600 10px/1 var(--sans);letter-spacing:.3em;color:var(--gold);opacity:.7}
+.mm-foot{border-top:1px solid rgba(255,255,255,.1);padding-top:26px;display:flex;flex-direction:column;gap:14px}
+.mm-foot a{color:var(--muted);font-size:14px;display:flex;align-items:center;gap:10px}
+.mm-foot a svg{width:15px;height:15px;color:var(--gold)}
+.mm-foot strong{color:#e8e9f0;font-weight:500}
+
+/* ============ HERO ============ */
+.hero{min-height:100vh;min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;padding:150px 0 60px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:heroZoom 16s ease-out forwards}
+@keyframes heroZoom{from{transform:scale(1.14)}to{transform:scale(1.02)}}
+.hero-overlay{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(6,7,13,.78) 0%,rgba(6,7,13,.42) 38%,rgba(6,7,13,.62) 68%,#06070d 98%)}
+.hero-overlay::after{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 50% at 12% 8%,rgba(91,140,255,.16),transparent 60%),
+  radial-gradient(50% 45% at 88% 30%,rgba(255,90,209,.12),transparent 65%),
+  radial-gradient(45% 40% at 55% 100%,rgba(154,107,255,.14),transparent 70%)}
+.hero-content{position:relative;z-index:3;width:100%}
+.hero-inner{max-width:900px}
+.hero-kicker{display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(213,179,107,.35);border-radius:999px;padding:10px 22px;
+  font:600 10.5px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-soft);background:rgba(10,11,20,.5);backdrop-filter:blur(8px)}
+.hero-kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--magenta);box-shadow:0 0 10px var(--magenta);animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.hero h1{font:600 clamp(2.7rem,6.4vw,5.1rem)/1.07 var(--serif);letter-spacing:.005em;margin:26px 0 22px;color:#f7f8fb;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold-soft);text-shadow:0 0 40px rgba(213,179,107,.25)}
+.hero-lead{color:#c3c7d6;font-size:clamp(15.5px,1.6vw,18px);font-weight:300;max-width:640px;line-height:1.75}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin:36px 0 52px}
+.hero-stats{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;border:1px solid rgba(255,255,255,.11);border-radius:20px;
+  background:rgba(9,10,18,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:8px 10px}
+.hs-item{flex:1 1 150px;padding:18px 24px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.hs-num{font:600 clamp(1.25rem,2vw,1.6rem)/1.1 var(--serif);color:#f6f7fa;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.hs-label{font:600 10px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.hs-sep{width:1px;background:linear-gradient(180deg,transparent,rgba(213,179,107,.4),transparent);flex:none}
+.scroll-hint{position:absolute;bottom:34px;right:40px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--muted)}
+.scroll-hint span{font:600 9.5px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;writing-mode:vertical-rl}
+.scroll-hint .line{width:1px;height:58px;background:linear-gradient(180deg,var(--gold),transparent);position:relative;overflow:hidden}
+.scroll-hint .line::after{content:'';position:absolute;top:-40%;left:0;width:100%;height:40%;background:#fff;animation:drip 2.2s ease-in-out infinite}
+@keyframes drip{to{top:110%}}
+
+/* ============ MARQUEE ============ */
+.marquee{border-top:1px solid rgba(213,179,107,.22);border-bottom:1px solid rgba(213,179,107,.22);background:#080a12;overflow:hidden;padding:20px 0;position:relative}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scrollX 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+.mq-item{display:inline-flex;align-items:center;gap:26px;padding:0 26px;font:500 13px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:#c9cdda;white-space:nowrap}
+.mq-item .dia{color:var(--gold);font-size:11px;text-shadow:0 0 12px rgba(213,179,107,.6)}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:72px;align-items:center}
+.about-visual{position:relative;padding:0 0 56px 0}
+.about-img-main{border-radius:22px;overflow:hidden;position:relative;box-shadow:0 40px 80px -30px rgba(0,0,0,.75)}
+.about-img-main::after{content:'';position:absolute;inset:0;background:linear-gradient(200deg,rgba(91,140,255,.12),transparent 45%,rgba(6,7,13,.35));pointer-events:none}
+.about-img-main img{width:100%;height:520px;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.about-visual:hover .about-img-main img{transform:scale(1.05)}
+.about-img-small{position:absolute;right:-14px;bottom:0;width:52%;border-radius:18px;overflow:hidden;border:6px solid var(--bg);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.about-img-small img{width:100%;height:200px;object-fit:cover}
+.about-float{position:absolute;top:26px;left:-22px;display:flex;align-items:center;gap:14px;padding:16px 22px;border-radius:16px;
+  background:rgba(10,11,20,.72);border:1px solid rgba(213,179,107,.35);backdrop-filter:blur(14px);box-shadow:0 20px 40px -16px rgba(0,0,0,.7)}
+.about-float .num{font:600 30px/1 var(--serif);color:var(--gold-soft)}
+.about-float .lbl{font:600 9.5px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.about-copy p{color:var(--muted);font-weight:300;font-size:16px;margin-bottom:18px}
+.about-copy p strong{color:#dfe2ec;font-weight:500}
+.about-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;margin:30px 0 36px}
+.about-list li{display:flex;align-items:center;gap:13px;font-size:14.5px;color:#d4d7e2;font-weight:400}
+.about-list .ic{width:38px;height:38px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--gold);
+  background:linear-gradient(150deg,rgba(213,179,107,.14),rgba(154,107,255,.1));border:1px solid rgba(213,179,107,.25)}
+.about-list .ic svg{width:17px;height:17px}
+
+/* ============ STATS BAND ============ */
+.stats-band{border-top:1px solid rgba(213,179,107,.2);border-bottom:1px solid rgba(213,179,107,.2);background:linear-gradient(180deg,#080a12,#0a0c16)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:52px 26px;text-align:center;position:relative}
+.stat + .stat::before{content:'';position:absolute;left:0;top:22%;bottom:22%;width:1px;background:linear-gradient(180deg,transparent,rgba(213,179,107,.3),transparent)}
+.stat .v{font:600 clamp(1.9rem,3.2vw,2.7rem)/1.1 var(--serif);color:#f6f7fa}
+.stat .v .grad{background:linear-gradient(92deg,#7ba2ff,#a97bff 55%,#ff6fd4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{font:600 10px/1.6 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.stat .stars{margin-top:10px}
+
+/* ============ AMBIENCE ============ */
+#ambience{background:radial-gradient(70% 50% at 80% 0%,rgba(154,107,255,.07),transparent 60%)}
+.amb-grid{display:grid;grid-template-columns:7fr 5fr;gap:18px}
+.amb-card{position:relative;border-radius:22px;overflow:hidden;background:#0c0e19;isolation:isolate}
+.amb-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.amb-card:hover img{transform:scale(1.06)}
+.amb-card::after{content:'';position:absolute;inset:0;background:linear-gradient(185deg,transparent 45%,rgba(5,6,11,.75));pointer-events:none}
+.amb-card.featured{min-height:560px}
+.amb-card.tall{min-height:271px}
+.amb-cap{position:absolute;left:24px;bottom:22px;z-index:2;transform:translateY(10px);opacity:.92;transition:transform .5s}
+.amb-card:hover .amb-cap{transform:translateY(0)}
+.amb-cap .t{font:500 21px/1.2 var(--serif);color:#f5f6fa}
+.amb-cap .s{font:600 9.5px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.amb-col{display:flex;flex-direction:column;gap:18px}
+.amb-badge{position:absolute;top:22px;right:22px;z-index:2;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
+  font:600 10px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#f6e7c4;background:rgba(8,9,16,.6);border:1px solid rgba(213,179,107,.4);backdrop-filter:blur(8px)}
+.amb-wide{margin-top:18px;position:relative;border-radius:22px;overflow:hidden}
+.amb-wide img{width:100%;height:340px;object-fit:cover;transition:transform 1.2s}
+.amb-wide:hover img{transform:scale(1.04)}
+.amb-wide .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,11,.85) 0%,rgba(5,6,11,.25) 55%,transparent);display:flex;align-items:center}
+.amb-wide .inner{padding:0 44px;max-width:520px}
+.amb-wide h3{font:500 clamp(1.5rem,2.6vw,2.1rem)/1.25 var(--serif);color:#f5f6fa}
+.amb-wide p{color:#b9bece;font-size:14.5px;font-weight:300;margin-top:12px}
+
+/* ============ MENU ============ */
+#menu{background:linear-gradient(180deg,#06070d,#090b14 50%,#06070d)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.menu-panel{position:relative;padding:56px 44px;border:1px solid rgba(213,179,107,.3);border-radius:24px;
+  background:linear-gradient(180deg,rgba(213,179,107,.05),rgba(154,107,255,.03)),rgba(10,11,19,.6);text-align:center}
+.menu-panel::before{content:'';position:absolute;inset:11px;border:1px solid rgba(213,179,107,.16);border-radius:16px;pointer-events:none}
+.menu-orn{color:var(--gold);font-size:15px;letter-spacing:.6em;text-indent:.6em;margin-bottom:16px}
+.menu-panel h3{font:600 30px/1.2 var(--serif);color:#f4f5f9}
+.menu-panel .rule{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto}
+.menu-placeholder{font:500 clamp(1rem,1.6vw,1.2rem)/1.5 var(--serif);font-style:italic;color:#b8a47a;border:1px dashed rgba(213,179,107,.4);
+  border-radius:14px;padding:30px 20px;margin:8px 0 22px;letter-spacing:.04em;background:rgba(213,179,107,.04)}
+.menu-panel .note{color:var(--muted);font-size:14px;font-weight:300;max-width:380px;margin:0 auto}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;font:500 12px/1 var(--sans);letter-spacing:.08em;
+  color:#d6d9e4;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12)}
+.chip svg{width:13px;height:13px;color:var(--gold)}
+.menu-copy .chips{justify-content:flex-start;margin-top:8px}
+.menu-points{margin:26px 0 34px;display:flex;flex-direction:column;gap:14px}
+.menu-points li{display:flex;gap:14px;align-items:flex-start;color:var(--muted);font-weight:300;font-size:15px}
+.menu-points li svg{width:17px;height:17px;color:var(--purple);flex:none;margin-top:4px}
+.menu-points li strong{color:#dfe2ec;font-weight:500}
+
+/* ============ OFFERS ============ */
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.offer{position:relative;padding:44px 34px 38px;border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+  border:1px solid var(--line);overflow:hidden;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.offer:hover{transform:translateY(-8px)}
+.offer::after{content:'';position:absolute;top:-70px;right:-60px;width:190px;height:190px;border-radius:50%;filter:blur(46px);opacity:.5;pointer-events:none;transition:opacity .4s}
+.offer:hover::after{opacity:.85}
+.offer.o1::after{background:rgba(255,90,209,.24)}
+.offer.o2::after{background:rgba(154,107,255,.22)}
+.offer.o3::after{background:rgba(91,140,255,.22)}
+.offer.featured::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.2px;pointer-events:none;
+  background:linear-gradient(140deg,var(--blue),var(--purple) 45%,var(--magenta));
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.offer-tag{display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border-radius:999px;font:600 9.5px/1 var(--sans);
+  letter-spacing:.24em;text-transform:uppercase;color:#f0e3c2;border:1px solid rgba(213,179,107,.4);background:rgba(213,179,107,.08)}
+.offer-tag svg{width:12px;height:12px;color:var(--gold)}
+.offer-pct{font:600 clamp(3rem,4.6vw,3.9rem)/1 var(--serif);margin:26px 0 4px;color:#f7f8fb}
+.offer-pct .grad{background:linear-gradient(92deg,#8fb0ff,#b07dff 50%,#ff7cd9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.offer-title{font:500 21px/1.3 var(--serif);color:#eef0f6;margin-bottom:6px}
+.offer-type{display:inline-flex;align-items:center;gap:8px;font:600 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.offer-type svg{width:13px;height:13px;color:var(--gold)}
+.offer-perk{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);color:#c6cad8;font-size:14px;font-weight:300;display:flex;gap:10px}
+.offer-perk svg{width:15px;height:15px;color:var(--magenta);flex:none;margin-top:4px}
+.offers-note{text-align:center;color:var(--muted);font-size:12.5px;font-weight:300;margin-top:34px;letter-spacing:.04em}
+.offers-cta{display:flex;justify-content:center;gap:16px;margin-top:34px;flex-wrap:wrap}
+
+/* ============ REVIEWS ============ */
+#reviews{background:radial-gradient(60% 45% at 15% 30%,rgba(91,140,255,.07),transparent 60%),#07080f;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.reviews-top{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:center;margin-bottom:52px}
+.rating-card{padding:48px 40px;text-align:center;position:relative;overflow:hidden}
+.rating-card::before{content:'';position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(213,179,107,.16),transparent 70%);filter:blur(30px)}
+.rating-num{font:600 clamp(4rem,7vw,5.4rem)/1 var(--serif);color:#f7f8fb}
+.rating-num .of{font-size:.36em;color:var(--muted);font-weight:400}
+.rating-card .stars{margin:16px 0 10px}
+.rating-card .stars svg{width:24px;height:24px}
+.rating-sub{font:600 11px/1.6 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.rating-bar{height:5px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;margin-top:26px}
+.rating-bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),#f2dfa9);transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
+.review-quotes{display:grid;gap:20px}
+.quote-card{padding:34px 36px;position:relative;transition:transform .4s,border-color .4s}
+.quote-card:hover{transform:translateY(-4px);border-color:rgba(213,179,107,.35)}
+.quote-mark{font:600 66px/0.6 var(--serif);color:var(--gold);opacity:.85;display:block;height:30px}
+.quote-text{font:500 italic 400 clamp(1.25rem,2vw,1.5rem)/1.5 var(--serif);color:#f0f1f7;margin:16px 0 18px}
+.quote-meta{display:flex;align-items:center;gap:12px;font:600 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.quote-meta::before{content:'';width:26px;height:1px;background:var(--gold-dim)}
+.themes{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+/* ============ GALLERY ============ */
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;grid-auto-rows:104px;grid-auto-flow:dense}
+.g-item{position:relative;border-radius:18px;overflow:hidden;background:#0c0e19;cursor:pointer;isolation:isolate}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .5s}
+.g-item:hover img{transform:scale(1.07);filter:brightness(1.08)}
+.g-item::after{content:'';position:absolute;inset:0;background:linear-gradient(185deg,transparent 50%,rgba(5,6,11,.72));opacity:.85;transition:opacity .4s;pointer-events:none}
+.g-item:hover::after{opacity:1}
+.g-cap{position:absolute;left:20px;bottom:16px;z-index:2;display:flex;align-items:center;gap:12px;
+  font:500 15px/1.2 var(--serif);color:#eef0f6;transform:translateY(8px);opacity:.9;transition:transform .45s}
+.g-item:hover .g-cap{transform:translateY(0)}
+.g-cap svg{width:15px;height:15px;color:var(--gold)}
+.g-1{grid-column:span 5;grid-row:span 3}
+.g-2{grid-column:span 4}
+.g-3{grid-column:span 3;grid-row:span 3}
+.g-4{grid-column:span 4;grid-row:span 2}
+.g-5{grid-column:span 5;grid-row:span 2}
+.g-6{grid-column:span 4}
+.g-7{grid-column:span 4;grid-row:span 2}
+.g-8{grid-column:span 5;grid-row:span 2}
+.g-9{grid-column:span 4}
+.g-10{grid-column:span 3;grid-row:span 2}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:1800;background:rgba(4,5,10,.93);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.lightbox.open{opacity:1;visibility:visible}
+.lb-stage{max-width:min(1080px,92vw);text-align:center}
+.lb-stage img{max-width:100%;max-height:76vh;border-radius:16px;box-shadow:0 50px 120px -30px rgba(0,0,0,.9);border:1px solid rgba(255,255,255,.12);
+  transform:scale(.96);transition:transform .45s}
+.lightbox.open .lb-stage img{transform:scale(1)}
+.lb-cap{margin-top:18px;font:500 19px/1.3 var(--serif);color:#eef0f6}
+.lb-count{font:600 10px/1 var(--sans);letter-spacing:.3em;color:var(--muted);margin-top:8px;text-transform:uppercase}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#eef0f6;cursor:pointer;transition:.3s;backdrop-filter:blur(8px)}
+.lb-btn:hover{background:rgba(154,107,255,.22);border-color:rgba(154,107,255,.6)}
+.lb-btn svg{width:20px;height:20px}
+.lb-prev{left:26px}.lb-next{right:26px}
+.lb-close{position:absolute;top:26px;right:26px;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#fff;transition:.3s;cursor:pointer}
+.lb-close:hover{background:rgba(255,90,209,.2);border-color:rgba(255,90,209,.6);transform:rotate(90deg)}
+.lb-close svg{width:19px;height:19px}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:stretch}
+.info-list{display:flex;flex-direction:column;gap:8px}
+.info-item{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.info-item:last-child{border-bottom:0}
+.info-ic{width:48px;height:48px;flex:none;border-radius:14px;display:grid;place-items:center;color:var(--gold);
+  background:linear-gradient(150deg,rgba(213,179,107,.13),rgba(154,107,255,.09));border:1px solid rgba(213,179,107,.25)}
+.info-ic svg{width:20px;height:20px}
+.info-item h4{font:600 10.5px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.info-item p{color:#cfd3e0;font-size:15.5px;font-weight:300;line-height:1.65}
+.info-item .strong{color:#f1f2f8;font-weight:500;font-size:17px}
+.placeholder-note{display:inline-block;font:500 12.5px/1.6 var(--sans);letter-spacing:.1em;color:#b8a47a;border:1px dashed rgba(213,179,107,.4);
+  border-radius:8px;padding:6px 12px;background:rgba(213,179,107,.05)}
+.contact-panel{padding:44px 40px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.contact-panel::before{content:'';position:absolute;top:-90px;right:-90px;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(154,107,255,.2),transparent 70%);filter:blur(40px)}
+.contact-panel h3{font:600 28px/1.25 var(--serif);color:#f4f5f9}
+.contact-panel .sub{color:var(--muted);font-size:14.5px;font-weight:300;margin:10px 0 28px}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2}
+.action-tile{display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:16px;border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.035);transition:.35s;cursor:pointer;font:600 12.5px/1.3 var(--sans);letter-spacing:.06em;color:#e9ebf3}
+.action-tile svg{width:19px;height:19px;flex:none;color:var(--gold)}
+.action-tile:hover{transform:translateY(-4px);border-color:rgba(154,107,255,.55);background:rgba(154,107,255,.1);box-shadow:0 16px 34px -14px rgba(154,107,255,.4)}
+.action-tile.primary{background:linear-gradient(135deg,#f2dfa9,#cda45c);color:#221907;border-color:transparent}
+.action-tile.primary svg{color:#6d5316}
+.action-tile.primary:hover{box-shadow:0 16px 36px -12px rgba(211,171,99,.6);transform:translateY(-4px)}
+.contact-foot{margin-top:auto;padding-top:26px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;font-weight:300}
+.contact-foot svg{width:15px;height:15px;color:var(--magenta)}
+
+/* ============ FINAL CTA ============ */
+.final-cta{position:relative;overflow:hidden;padding:150px 0;text-align:center}
+.fc-bg{position:absolute;inset:0;z-index:0}
+.fc-bg img{width:100%;height:100%;object-fit:cover}
+.fc-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(6,7,13,.88),rgba(6,7,13,.66) 50%,rgba(6,7,13,.92)),
+  radial-gradient(50% 60% at 50% 100%,rgba(154,107,255,.16),transparent 70%)}
+.fc-inner{position:relative;z-index:3;max-width:860px;margin:0 auto}
+.final-cta h2{font:600 clamp(2.3rem,5.4vw,4.2rem)/1.14 var(--serif);color:#f7f8fb;margin:22px 0 20px;text-wrap:balance}
+.final-cta h2 em{font-style:italic;color:var(--gold-soft)}
+.final-cta p{color:#c3c7d6;font-weight:300;max-width:560px;margin:0 auto 38px;font-size:16.5px}
+.fc-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
+
+/* ============ FOOTER ============ */
+footer{background:#05060b;border-top:1px solid rgba(213,179,107,.2);padding:76px 0 0;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(154,107,255,.4),rgba(213,179,107,.5),transparent)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.1fr;gap:48px;padding-bottom:56px}
+.foot-brand p{color:var(--muted);font-size:14px;font-weight:300;margin:18px 0 22px;max-width:320px}
+.foot-rating{display:inline-flex;align-items:center;gap:12px;padding:12px 18px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1)}
+.foot-rating .n{font:600 21px/1 var(--serif);color:var(--gold-soft)}
+.foot-rating .c{font:600 10px/1.5 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.foot-h{font:600 11px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:24px}
+.foot-links{display:flex;flex-direction:column;gap:13px}
+.foot-links a{color:#a9aebf;font-size:14.5px;font-weight:300;display:inline-flex;align-items:center;gap:10px;transition:color .3s,transform .3s}
+.foot-links a::before{content:'✦';font-size:8px;color:var(--gold);opacity:0;transition:opacity .3s}
+.foot-links a:hover{color:#fff;transform:translateX(4px)}
+.foot-links a:hover::before{opacity:1}
+.foot-info{display:flex;flex-direction:column;gap:16px;font-size:14.5px;font-weight:300;color:#a9aebf}
+.foot-info li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:#a9aebf;font-weight:300}
+.foot-info svg{width:16px;height:16px;color:var(--gold);flex:none;margin-top:4px}
+.foot-info strong{color:#e6e8f0;font-weight:500}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding:26px 0;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.foot-bottom p{font-size:12.5px;color:#7c8195;font-weight:300;letter-spacing:.04em}
+.foot-bottom .tag{font:600 10px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:#7c8195}
+
+/* ============ MODAL ============ */
+.modal{position:fixed;inset:0;z-index:1900;display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:.4s}
+.modal.open{opacity:1;visibility:visible}
+.modal-bg{position:absolute;inset:0;background:rgba(4,5,10,.85);backdrop-filter:blur(10px)}
+.modal-card{position:relative;width:min(480px,100%);padding:48px 40px;border-radius:24px;text-align:center;
+  background:linear-gradient(180deg,#12131f,#0b0d17);border:1px solid rgba(213,179,107,.3);
+  box-shadow:0 60px 120px -30px rgba(0,0,0,.9);transform:translateY(24px) scale(.97);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.modal.open .modal-card{transform:translateY(0)}
+.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#a9aebf;border:1px solid rgba(255,255,255,.12);transition:.3s;cursor:pointer}
+.modal-close:hover{color:#fff;border-color:rgba(255,255,255,.35)}
+.modal-close svg{width:16px;height:16px}
+.modal-orn{color:var(--gold);letter-spacing:.6em;text-indent:.6em;font-size:13px;margin-bottom:14px}
+.modal-card h3{font:600 30px/1.2 var(--serif);color:#f4f5f9}
+.modal-card .sub{color:var(--muted);font-size:14px;font-weight:300;margin:12px 0 26px}
+.modal-phone{display:block;font:600 32px/1 var(--serif);color:var(--gold-soft);letter-spacing:.04em;margin-bottom:8px;transition:.3s}
+.modal-phone:hover{color:#f2dfa9;text-shadow:0 0 30px rgba(213,179,107,.5)}
+.modal-chips{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0 26px}
+.modal-note{font-size:12.5px;color:#7c8195;font-weight:300}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .nav-links{display:none}
+  .nav-cta .btn{display:none}
+  .hamburger{display:block}
+  .about-grid{grid-template-columns:1fr;gap:56px}
+  .about-img-main img{height:440px}
+  .reviews-top{grid-template-columns:1fr;gap:34px}
+  .offers-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .contact-grid{grid-template-columns:1fr;gap:44px}
+}
+@media(max-width:880px){
+  .section{padding:84px 0}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3)::before{display:none}
+  .stat{padding:36px 20px}
+  .menu-grid{grid-template-columns:1fr;gap:44px}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:12px}
+  .g-item{grid-column:span 1 !important;grid-row:auto !important;aspect-ratio:4/3}
+  .g-item.wide{grid-column:span 2 !important;aspect-ratio:16/9}
+  .amb-grid{grid-template-columns:1fr}
+  .amb-card.featured{min-height:380px}
+  .amb-wide .inner{padding:0 26px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .reviews-top{grid-template-columns:1fr}
+  .scroll-hint{display:none}
+}
+@media(max-width:600px){
+  .container{padding:0 20px}
+  .hero{padding-top:130px}
+  .hero-stats{flex-direction:column;gap:0;padding:4px}
+  .hs-item{padding:15px 18px}
+  .hs-sep{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(213,179,107,.35),transparent)}
+  .hero-actions .btn{flex:1 1 auto;justify-content:center}
+  .about-list{grid-template-columns:1fr}
+  .about-img-small{right:0;width:56%}
+  .action-grid{grid-template-columns:1fr}
+  .amb-card.featured{min-height:300px}
+  .amb-wide h3{margin-bottom:6px}
+  .amb-wide .inner{padding:26px 22px}
+  .amb-wide .veil{position:absolute;inset:0;background:rgba(5,6,11,.72)}
+  .foot-grid{grid-template-columns:1fr}
+  .section{padding:72px 0}
+  .modal-card{padding:40px 26px}
+  .g-cap{left:14px;bottom:12px;font-size:13.5px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand" aria-label="Royal Regal Cafe, Lounge and Restra — Home">
+      <span class="brand-mark"><i data-lucide="crown"></i></span>
+      <span>
+        <span class="brand-name">Royal Regal</span>
+        <span class="brand-sub" style="display:block">Cafe · Lounge · Restra</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-gold btn-line" data-reserve>Reserve a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mm-nav" aria-label="Mobile navigation">
+    <a href="#home"><span>01</span>Home</a>
+    <a href="#about"><span>02</span>About</a>
+    <a href="#menu"><span>03</span>Menu</a>
+    <a href="#offers"><span>04</span>Offers</a>
+    <a href="#gallery"><span>05</span>Gallery</a>
+    <a href="#reviews"><span>06</span>Reviews</a>
+    <a href="#contact"><span>07</span>Contact</a>
+  </nav>
+  <div class="mm-foot">
+    <a href="tel:09319761115"><i data-lucide="phone"></i><strong>093197 61115</strong></a>
+    <a href="#contact"><i data-lucide="clock"></i>Open Daily · 11 AM – 11 PM</a>
+    <button class="btn btn-gold" data-reserve style="margin-top:8px">Reserve a Table <i data-lucide="arrow-right"></i></button>
+  </div>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1920&auto=format&fit=crop" alt="" data-fb="0" fetchpriority="high">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-kicker reveal"><span class="dot"></span>Royal Regal Cafe, Lounge &amp; Restra — North Indian</span>
+        <h1 class="reveal" data-delay="1">Where <em>Royal Ambience</em> Meets <span class="grad-text">Exceptional Taste</span></h1>
+        <p class="hero-lead reveal" data-delay="2">Royal Regal Cafe, Lounge &amp; Restra brings rich North Indian flavours together with a premium, softly-lit lounge setting — a destination crafted for family dinners, friendly get-togethers and celebrations that linger in memory.</p>
+        <div class="hero-actions reveal" data-delay="3">
+          <button class="btn btn-gold" data-reserve>Reserve a Table <i data-lucide="arrow-right"></i></button>
+          <a href="#menu" class="btn btn-ghost">View Menu</a>
+        </div>
+        <div class="hero-stats glass reveal" data-delay="4">
+          <div class="hs-item">
+            <span class="hs-num">4.7
+              <span class="stars small" style="--w:94%" aria-hidden="true">
+                <span class="row base"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
+                <span class="fill" style="width:94%"><span class="row"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></span>
+              </span>
+            </span>
+            <span class="hs-label">Guest Rating</span>
+          </div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><span class="hs-num">1,093</span><span class="hs-label">Guest Reviews</span></div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><span class="hs-num">₹200 – ₹1,200</span><span class="hs-label">Per Person</span></div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><span class="hs-num">11 AM – 11 PM</span><span class="hs-label">Open Daily</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="mq-item"><span class="dia">✦</span> North Indian Cuisine</span>
+    <span class="mq-item"><span class="dia">✦</span> Happy-Hour Food</span>
+    <span class="mq-item"><span class="dia">✦</span> Vegetarian Options</span>
+    <span class="mq-item"><span class="dia">✦</span> Premium Ambience</span>
+    <span class="mq-item"><span class="dia">✦</span> Family &amp; Party Friendly</span>
+    <span class="mq-item"><span class="dia">✦</span> Value for Money</span>
+    <span class="mq-item"><span class="dia">✦</span> Open Daily · 11 AM – 11 PM</span>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="glow g-purple" style="width:420px;height:420px;top:-60px;left:-140px;opacity:.7"></div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop" alt="Warm, premium interior of Royal Regal Cafe, Lounge & Restra" data-fb="0" loading="lazy">
+        </div>
+        <div class="about-img-small">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop" alt="Cafe table setting with elegant detailing" data-fb="1" loading="lazy">
+        </div>
+        <div class="about-float">
+          <span class="num">4.7★</span>
+          <span class="lbl">Rated by<br>1,093 Guests</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <div class="sec-head reveal" style="margin-bottom:26px">
+          <span class="kicker">About &amp; Experience</span>
+          <h2 class="sec-title">A Royal Welcome, <em>Every Single Time</em></h2>
+        </div>
+        <p class="reveal" data-delay="1">Step into <strong>Royal Regal Cafe, Lounge &amp; Restra</strong> — a North Indian dining and lounge destination where rich, flavour-forward cuisine meets a premium, thoughtfully-lit ambience. It is a space designed for lingering conversations, celebrations and everyday evenings that deserve a little more sparkle.</p>
+        <p class="reveal" data-delay="1">From comfortable lounge seating to a warm, cooperative team at your service, every detail is tuned to make families, friends and parties feel completely at home — all at pricing that remains genuinely reasonable.</p>
+        <ul class="about-list reveal" data-delay="2">
+          <li><span class="ic"><i data-lucide="utensils-crossed"></i></span>North Indian Cuisine</li>
+          <li><span class="ic"><i data-lucide="leaf"></i></span>Vegetarian Options</li>
+          <li><span class="ic"><i data-lucide="sparkles"></i></span>Premium Ambience</li>
+          <li><span class="ic"><i data-lucide="users"></i></span>Family &amp; Party Friendly</li>
+          <li><span class="ic"><i data-lucide="heart-handshake"></i></span>Friendly, Cooperative Staff</li>
+          <li><span class="ic"><i data-lucide="indian-rupee"></i></span>Value for Money</li>
+        </ul>
+        <div class="reveal" data-delay="3" style="display:flex;gap:16px;flex-wrap:wrap">
+          <button class="btn btn-gold" data-reserve>Reserve a Table</button>
+          <a href="#gallery" class="btn btn-ghost btn-line">Explore the Space</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS BAND ================= -->
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal">
+        <div class="v grad-text" data-count="4.7" data-decimals="1">0</div>
+        <div class="l">Guest Rating</div>
+        <span class="stars small" aria-hidden="true">
+          <span class="row base"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
+          <span class="fill" style="width:94%"><span class="row"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></span>
+        </span>
+      </div>
+      <div class="stat reveal" data-delay="1">
+        <div class="v" data-count="1093">0</div>
+        <div class="l">Guest Reviews</div>
+      </div>
+      <div class="stat reveal" data-delay="2">
+        <div class="v">₹200–₹1,200</div>
+        <div class="l">Per Person</div>
+      </div>
+      <div class="stat reveal" data-delay="3">
+        <div class="v">11 AM–11 PM</div>
+        <div class="l">Open Daily</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AMBIENCE ================= -->
+<section class="section" id="ambience">
+  <div class="glow g-blue" style="width:420px;height:420px;top:10%;right:-140px;opacity:.6"></div>
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker center">The Ambience</span>
+      <h2 class="sec-title">An Ambience Made to Be <em>Remembered</em></h2>
+      <p class="sec-sub" style="margin:0 auto">Layered evening lighting, comfortable lounge seating and a richly finished interior — every corner of Royal Regal is designed to make your evening feel special.</p>
+    </div>
+    <div class="amb-grid">
+      <div class="amb-card featured reveal">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1400&auto=format&fit=crop" alt="Signature evening lighting across the Royal Regal lounge counter" data-fb="1" loading="lazy">
+        <div class="amb-cap"><div class="t">Signature Evening Lighting</div><div class="s">Lounge Atmosphere</div></div>
+      </div>
+      <div class="amb-col">
+        <div class="amb-card tall reveal" data-delay="1">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Comfortable dining seating at Royal Regal" data-fb="1" loading="lazy">
+          <div class="amb-cap"><div class="t">Comfortable Seating</div><div class="s">Dine-In Comfort</div></div>
+        </div>
+        <div class="amb-card tall reveal" data-delay="2">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop" alt="Lounge corners with warm, premium finishing" data-fb="2" loading="lazy">
+          <div class="amb-cap"><div class="t">Lounge Corners</div><div class="s">Made for Conversations</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="amb-wide reveal" data-delay="1">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1800&auto=format&fit=crop" alt="The Royal Regal dining floor set for the evening" data-fb="0" loading="lazy">
+      <div class="veil" style="position:absolute;inset:0;display:flex;align-items:center">
+        <div class="amb-wide-inner" style="padding:0 44px;max-width:560px">
+          <span class="kicker" style="font-size:10px">The Royal Regal Floor</span>
+          <h3 style="font:500 clamp(1.4rem,2.4vw,2rem)/1.3 var(--serif);color:#f5f6fa;margin-top:12px">Set for families, friends &amp; celebrations</h3>
+          <p style="color:#b9bece;font-size:14.5px;font-weight:300;margin-top:10px">A pleasant, premium setting that suits everything from quiet dinners to party evenings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="section" id="menu">
+  <div class="glow g-magenta" style="width:380px;height:380px;bottom:0;left:-120px;opacity:.6"></div>
+  <div class="container">
+    <div class="menu-grid">
+      <div>
+        <div class="sec-head reveal" style="margin-bottom:26px">
+          <span class="kicker">The Menu</span>
+          <h2 class="sec-title">Explore Our <em>Menu</em></h2>
+        </div>
+        <p class="reveal" data-delay="1" style="color:var(--muted);font-weight:300;font-size:16px;max-width:520px">Our kitchen celebrates <strong style="color:#dfe2ec;font-weight:500">North Indian favourites</strong> alongside vegetarian specials and happy-hour plates — served in a setting made for slow, satisfying evenings.</p>
+        <ul class="menu-points reveal" data-delay="2" style="margin:26px 0 30px">
+          <li><i data-lucide="chef-hat"></i><span><strong>Cuisine — North Indian.</strong> Rich, flavour-forward preparations at the heart of our kitchen.</span></li>
+          <li><i data-lucide="leaf"></i><span><strong>Vegetarian options</strong> and <strong>happy-hour food</strong> available.</span></li>
+          <li><i data-lucide="indian-rupee"></i><span><strong>₹200 – ₹1,200 per person</strong> — reasonable, budget-friendly pricing.</span></li>
+        </ul>
+        <div class="reveal" data-delay="3" style="display:flex;gap:16px;flex-wrap:wrap">
+          <a href="tel:09319761115" class="btn btn-gold">Call for Today's Menu <i data-lucide="phone"></i></a>
+          <button class="btn btn-ghost" data-reserve>Reserve a Table</button>
+        </div>
+      </div>
+      <div class="menu-panel reveal" data-delay="2">
+        <div class="menu-orn">✦ ✦ ✦</div>
+        <h3>Our Menu Card</h3>
+        <div class="rule"></div>
+        <div class="menu-placeholder">[ADD MENU ITEMS / MENU LINK]</div>
+        <p class="note">Detailed dish names, descriptions and prices are being added from our printed menu. Meanwhile, call us between <strong style="color:#dfe2ec;font-weight:500">11 AM – 11 PM</strong> and our team will gladly share today's offerings.</p>
+        <div class="chips">
+          <span class="chip"><i data-lucide="utensils-crossed"></i>North Indian</span>
+          <span class="chip"><i data-lucide="leaf"></i>Vegetarian Options</span>
+          <span class="chip"><i data-lucide="sparkles"></i>Happy-Hour Food</span>
+          <span class="chip"><i data-lucide="indian-rupee"></i>₹200 – ₹1,200 / person</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFFERS ================= -->
+<section class="section" id="offers">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker center">Exclusive Offers</span>
+      <h2 class="sec-title">Offers Worth <em>Celebrating</em></h2>
+      <p class="sec-sub">Current offers at Royal Regal — exactly as provided by the venue.</p>
+    </div>
+    <div class="offers-grid">
+      <article class="offer featured reveal">
+        <span class="offer-tag"><i data-lucide="crown"></i>Biggest Saver</span>
+        <div class="offer-pct"><span class="grad">Flat 50%</span> Off</div>
+        <h3 class="offer-title">On your bill, every walk-in visit</h3>
+        <span class="offer-type"><i data-lucide="users"></i>Walk-in Offer</span>
+        <p class="offer-perk"><i data-lucide="sparkles"></i>Maximum discount ₹50,000.</p>
+      </article>
+      <article class="offer o2 reveal" data-delay="1">
+        <span class="offer-tag"><i data-lucide="badge-percent"></i>Walk-in Offer</span>
+        <div class="offer-pct"><span class="grad">Flat 15%</span> Off</div>
+        <h3 class="offer-title">On your bill, every walk-in visit</h3>
+        <span class="offer-type"><i data-lucide="users"></i>Walk-in Offer</span>
+        <p class="offer-perk"><i data-lucide="sparkles"></i>Save up to ₹500 more with additional offers.</p>
+      </article>
+      <article class="offer o3 reveal" data-delay="2">
+        <span class="offer-tag"><i data-lucide="calendar-check"></i>Pre-booking</span>
+        <div class="offer-pct"><span class="grad">Flat 10%</span> Off</div>
+        <h3 class="offer-title">On your total bill</h3>
+        <span class="offer-type"><i data-lucide="wallet"></i>Paid Pre-booking</span>
+        <p class="offer-perk"><i data-lucide="sparkles"></i>Save up to ₹500 more with additional offers.</p>
+      </article>
+    </div>
+    <p class="offers-note reveal">Offer details as displayed by Royal Regal Cafe, Lounge &amp; Restra. Please confirm current terms with our team before billing.</p>
+    <div class="offers-cta reveal">
+      <a href="tel:09319761115" class="btn btn-gold">Call Now <i data-lucide="phone"></i></a>
+      <button class="btn btn-ghost" data-reserve>Reserve a Table</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="reviews-top">
+      <div class="rating-card glass reveal">
+        <div class="rating-num">4.7<span class="of">/5</span></div>
+        <span class="stars" aria-hidden="true">
+          <span class="row base"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
+          <span class="fill" style="width:94%"><span class="row"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></span>
+        </span>
+        <div class="rating-sub">Rated by 1,093 Guests</div>
+        <div class="rating-bar"><i data-fill="94"></i></div>
+      </div>
+      <div class="review-quotes">
+        <div class="quote-card glass reveal" data-delay="1">
+          <span class="quote-mark">“</span>
+          <p class="quote-text">Excellent service, food and ambiance.</p>
+          <div class="quote-meta">Verified Guest Feedback</div>
+        </div>
+        <div class="quote-card glass reveal" data-delay="2">
+          <span class="quote-mark">“</span>
+          <p class="quote-text">Reasonable price and good food.</p>
+          <div class="quote-meta">Verified Guest Feedback</div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-head center reveal" style="margin-bottom:34px">
+      <span class="kicker center">What Guests Highlight</span>
+      <h2 class="sec-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">The Themes Our Guests <em>Keep Mentioning</em></h2>
+    </div>
+    <div class="themes reveal" data-delay="1">
+      <span class="chip"><i data-lucide="chef-hat"></i>Delicious, Tasty Food</span>
+      <span class="chip"><i data-lucide="badge-check"></i>Good Food Quality</span>
+      <span class="chip"><i data-lucide="sparkles"></i>Pleasant Ambience</span>
+      <span class="chip"><i data-lucide="heart-handshake"></i>Friendly &amp; Cooperative Staff</span>
+      <span class="chip"><i data-lucide="bell-ring"></i>Good Service</span>
+      <span class="chip"><i data-lucide="indian-rupee"></i>Reasonable Pricing</span>
+      <span class="chip"><i data-lucide="party-popper"></i>Family &amp; Party Friendly</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="glow g-purple" style="width:400px;height:400px;top:6%;left:-160px;opacity:.55"></div>
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker center">Gallery</span>
+      <h2 class="sec-title">Moments at <em>Royal Regal</em></h2>
+      <p class="sec-sub">Interiors, lighting, lounge corners and the plates our guests come back for. Tap any photo to view it in full.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <figure class="g-item g-1 wide reveal" tabindex="0" role="button" aria-label="View photo: The Royal Dining Hall"
+        data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop" data-caption="The Royal Dining Hall">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=900&auto=format&fit=crop" alt="The Royal Regal dining hall with dramatic evening lighting" data-fb="0" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>The Royal Dining Hall</figcaption>
+      </figure>
+      <figure class="g-item g-2 reveal" data-delay="1" tabindex="0" role="button" aria-label="View photo: Comfortable Lounge Seating"
+        data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1600&auto=format&fit=crop" data-caption="Comfortable Lounge Seating">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=900&auto=format&fit=crop" alt="Comfortable lounge seating in a premium setting" data-fb="2" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Comfortable Lounge Seating</figcaption>
+      </figure>
+      <figure class="g-item g-3 wide reveal" data-delay="2" tabindex="0" role="button" aria-label="View photo: Signature Evening Lighting"
+        data-full="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=crop" data-caption="Signature Evening Lighting">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop" alt="Blue and warm signature lighting across the lounge counter" data-fb="0" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Signature Evening Lighting</figcaption>
+      </figure>
+      <figure class="g-item g-4 reveal" data-delay="1" tabindex="0" role="button" aria-label="View photo: Warm, Inviting Corners"
+        data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1600&auto=format&fit=crop" data-caption="Warm, Inviting Corners">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=900&auto=format&fit=crop" alt="Warm string lights and inviting seating corners" data-fb="1" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Warm, Inviting Corners</figcaption>
+      </figure>
+      <figure class="g-item g-5 wide reveal" data-delay="1" tabindex="0" role="button" aria-label="View photo: Premium Interiors"
+        data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop" data-caption="Premium Interiors">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000&auto=format&fit=crop" alt="Elegant premium interior of the restaurant" data-fb="1" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Premium Interiors</figcaption>
+      </figure>
+      <figure class="g-item g-6 reveal" data-delay="2" tabindex="0" role="button" aria-label="View photo: Lounge & Bar Atmosphere"
+        data-full="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=1600&auto=format&fit=crop" data-caption="Lounge & Bar Atmosphere">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=900&auto=format&fit=crop" alt="Lounge and bar atmosphere with neon accents" data-fb="2" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Lounge &amp; Bar Atmosphere</figcaption>
+      </figure>
+      <figure class="g-item g-7 wide reveal" data-delay="2" tabindex="0" role="button" aria-label="View photo: The Evening Mood"
+        data-full="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop" data-caption="The Evening Mood">
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=900&auto=format&fit=crop" alt="Moody evening mood inside the lounge" data-fb="1" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>The Evening Mood</figcaption>
+      </figure>
+      <figure class="g-item g-8 reveal" data-delay="3" tabindex="0" role="button" aria-label="View photo: North Indian Favourites"
+        data-full="https://images.unsplash.com/photo-1585937421612-70a0081026bd?q=80&w=1600&auto=format&fit=crop" data-caption="North Indian Favourites">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a0081026bd?q=80&w=900&auto=format&fit=crop" alt="North Indian curry served with naan" data-fb="2" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>North Indian Favourites</figcaption>
+      </figure>
+      <figure class="g-item g-9 reveal" data-delay="3" tabindex="0" role="button" aria-label="View photo: Celebrations with Family & Friends"
+        data-full="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1600&auto=format&fit=crop" data-caption="Celebrations with Family & Friends">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=900&auto=format&fit=crop" alt="Friends and family gathered around a table celebrating" data-fb="0" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Celebrations Together</figcaption>
+      </figure>
+      <figure class="g-item g-10 reveal" data-delay="4" tabindex="0" role="button" aria-label="View photo: Crafted with Care"
+        data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop" data-caption="Crafted with Care">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop" alt="A crafted dish plated with care" data-fb="2" loading="lazy">
+        <figcaption class="g-cap"><i data-lucide="plus"></i>Crafted with Care</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="glow g-blue" style="width:380px;height:380px;bottom:-100px;right:-120px;opacity:.55"></div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Location &amp; Contact</span>
+      <h2 class="sec-title">Find Us. <em>Call Us.</em> Visit Us.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="info-list reveal" data-delay="1">
+        <div class="info-item">
+          <span class="info-ic"><i data-lucide="map-pin"></i></span>
+          <div>
+            <h4>Address</h4>
+            <p class="strong">Royal Regal Cafe, Lounge &amp; Restra</p>
+            <p>First Floor, KH. No. 540, Main Road, opposite Shalimar Palace, near Aapka Budget Bazaar, Data Ram Tyagi…</p>
+            <p style="margin-top:10px"><span class="placeholder-note">[COMPLETE ADDRESS]</span></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><i data-lucide="phone"></i></span>
+          <div>
+            <h4>Phone</h4>
+            <p class="strong"><a href="tel:09319761115" style="color:#f2dfa9">093197&nbsp;61115</a></p>
+            <p>Call us for reservations &amp; enquiries.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><i data-lucide="clock"></i></span>
+          <div>
+            <h4>Opening Hours</h4>
+            <p class="strong">11 AM – 11 PM · Daily</p>
+            <p>Open every day of the week.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><i data-lucide="utensils-crossed"></i></span>
+          <div>
+            <h4>Cuisine</h4>
+            <p class="strong">North Indian</p>
+            <p>₹200 – ₹1,200 per person · Vegetarian options · Happy-hour food</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-panel glass reveal" data-delay="2">
+        <h3>Plan Your Visit</h3>
+        <p class="sub">Reservations are taken by phone — our team will be happy to arrange your table.</p>
+        <div class="action-grid">
+          <a class="action-tile primary" href="tel:09319761115"><i data-lucide="phone-call"></i>Call Now — 093197 61115</a>
+          <a class="action-tile" href="https://wa.me/919319761115" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp Us</a>
+          <a class="action-tile" href="https://www.google.com/maps/search/?api=1&query=Royal%20Regal%20Cafe%20Lounge%20%26%20Restra%20Main%20Road%20opposite%20Shalimar%20Palace" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Get Directions</a>
+          <button class="action-tile" data-reserve><i data-lucide="calendar-check"></i>Reserve a Table</button>
+        </div>
+        <div class="contact-foot"><i data-lucide="party-popper"></i>Suitable for family gatherings &amp; parties — just ask our team.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta">
+  <div class="fc-bg" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1470337458703-46b17595a911?q=80&w=1800&auto=format&fit=crop" alt="" data-fb="1" loading="lazy">
+  </div>
+  <div class="fc-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="fc-inner">
+      <span class="kicker center reveal">Reserve Your Evening</span>
+      <h2 class="reveal" data-delay="1">Your Table. Your Evening. <em>Your Royal Experience.</em></h2>
+      <p class="reveal" data-delay="2">Rated 4.7 by 1,093 guests · North Indian cuisine · ₹200–₹1,200 per person · Open daily 11 AM – 11 PM.</p>
+      <div class="fc-actions reveal" data-delay="3">
+        <button class="btn btn-gold" data-reserve>Reserve a Table <i data-lucide="arrow-right"></i></button>
+        <a href="tel:09319761115" class="btn btn-ghost">Call Now</a>
+        <a href="#menu" class="btn btn-ghost btn-line">View Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="brand" aria-label="Royal Regal — back to top">
+          <span class="brand-mark"><i data-lucide="crown"></i></span>
+          <span>
+            <span class="brand-name">Royal Regal</span>
+            <span class="brand-sub" style="display:block">Cafe · Lounge · Restra</span>
+          </span>
+        </a>
+        <p>A North Indian dining &amp; lounge destination — premium ambience, friendly service and food worth returning for.</p>
+        <div class="foot-rating">
+          <span class="n">4.7★</span>
+          <span class="c">1,093 Guest<br>Reviews</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="foot-h">Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="foot-h">Visit Us</h4>
+        <ul class="foot-info">
+          <li><i data-lucide="map-pin"></i><span>First Floor, KH. No. 540, Main Road, opposite Shalimar Palace, near Aapka Budget Bazaar, Data Ram Tyagi…<br><span class="placeholder-note" style="margin-top:8px;display:inline-block">[COMPLETE ADDRESS]</span></span></li>
+          <li style="margin-top:14px"><i data-lucide="clock"></i><span>Open Daily · 11 AM – 11 PM</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="foot-h">Contact</h4>
+        <ul class="foot-info">
+          <li><i data-lucide="phone"></i><span><a href="tel:09319761115" style="color:#f2dfa9">093197 61115</a></span></li>
+          <li style="margin-top:14px"><i data-lucide="utensils-crossed"></i><span>Cuisine — North Indian · Vegetarian options · Happy-hour food</span></li>
+          <li style="margin-top:14px"><i data-lucide="indian-rupee"></i><span>₹200 – ₹1,200 per person</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year">2025</span> Royal Regal Cafe, Lounge &amp; Restra. All rights reserved.</p>
+      <span class="tag">North Indian · Cafe · Lounge · Restra</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close photo view"><i data-lucide="x"></i></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><i data-lucide="chevron-left"></i></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><i data-lucide="chevron-right"></i></button>
+  <div class="lb-stage">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-cap" id="lbCap"></div>
+    <div class="lb-count" id="lbCount"></div>
+  </div>
+</div>
+
+<!-- ================= RESERVE MODAL ================= -->
+<div class="modal" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
+  <div class="modal-bg" data-close-modal></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close-modal aria-label="Close"><i data-lucide="x"></i></button>
+    <div class="modal-orn">✦ ✦ ✦</div>
+    <h3>Reserve a Table</h3>
+    <p class="sub">Reservations at Royal Regal are currently taken by phone. Call us and our team will arrange your table.</p>
+    <a class="modal-phone" href="tel:09319761115">093197 61115</a>
+    <div class="modal-chips">
+      <span class="chip"><i data-lucide="clock"></i>11 AM – 11 PM · Daily</span>
+      <span class="chip"><i data-lucide="users"></i>Families &amp; Parties</span>
+    </div>
+    <a href="tel:09319761115" class="btn btn-gold" style="width:100%"><i data-lucide="phone-call"></i>Call 093197 61115</a>
+    <p class="modal-note" style="margin-top:18px">Walk-ins welcome · Flat 50% off on walk-in bills (max discount ₹50,000)</p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+(function(){
+  'use strict';
+
+  /* Icons */
+  function renderIcons(){ if(window.lucide && window.lucide.createIcons){ window.lucide.createIcons(); } }
+  renderIcons();
+
+  /* Image fallbacks — swap to reliable images if any photo fails */
+  var FB = [
+    'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop'
+  ];
+  document.querySelectorAll('img[data-fb]').forEach(function(img){
+    img.addEventListener('error', function(){
+      if(img.dataset.fbDone) return;
+      img.dataset.fbDone = '1';
+      img.src = FB[(+img.dataset.fb || 0) % FB.length];
+    });
+  });
+
+  /* Header + scroll progress */
+  var header = document.getElementById('siteHeader');
+  var progress = document.getElementById('scrollProgress');
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    header.classList.toggle('scrolled', y > 40);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* Mobile menu */
+  var burger = document.getElementById('hamburger');
+  var mm = document.getElementById('mobileMenu');
+  function toggleMenu(force){
+    var open = (typeof force === 'boolean') ? force : !mm.classList.contains('open');
+    mm.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    burger.setAttribute('aria-expanded', open);
+    mm.setAttribute('aria-hidden', String(!open));
+  }
+  burger.addEventListener('click', function(){ toggleMenu(); });
+  mm.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggleMenu(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && mm.classList.contains('open')) toggleMenu(false); });
+
+  /* Duplicate marquee content for seamless loop */
+  var track = document.getElementById('marqueeTrack');
+  track.innerHTML += track.innerHTML;
+
+  /* Reveal on scroll */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* Counters */
+  function animateCount(el){
+    var target = parseFloat(el.dataset.count);
+    var decimals = parseInt(el.dataset.decimals || '0', 10);
+    var dur = 1700, start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      var val = target * e;
+      el.textContent = decimals ? val.toFixed(decimals) : Math.round(val).toLocaleString('en-IN');
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ animateCount(en.target); cio.unobserve(en.target); }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+
+  /* Rating bar fill */
+  var rio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.style.width = en.target.dataset.fill + '%'; rio.unobserve(en.target); }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('[data-fill]').forEach(function(el){ rio.observe(el); });
+
+  /* Active nav link */
+  var sections = document.querySelectorAll('main section[id]');
+  var navLinks = document.querySelectorAll('.nav-links a');
+  var sio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+      }
+    });
+  }, {rootMargin:'-42% 0px -52% 0px'});
+  sections.forEach(function(s){ sio.observe(s); });
+
+  /* Reserve modal */
+  var modal = document.getElementById('reserveModal');
+  var lastFocus = null;
+  function openModal(){
+    lastFocus = document.activeElement;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    var first = modal.querySelector('a,button');
+    if(first) first.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    if(lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-reserve]').forEach(function(b){ b.addEventListener('click', openModal); });
+  modal.querySelectorAll('[data-close-modal]').forEach(function(b){ b.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+  /* Lightbox */
+  var items = Array.prototype.slice.call(document.querySelectorAll('.g-item'));
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCap = document.getElementById('lbCap');
+  var lbCount = document.getElementById('lbCount');
+  var current = 0;
+  function show(i){
+    current = (i + items.length) % items.length;
+    var it = items[current];
+    lbImg.src = it.dataset.full;
+    lbImg.alt = it.dataset.caption || '';
+    lbCap.textContent = it.dataset.caption || '';
+    lbCount.textContent = (current + 1) + ' / ' + items.length;
+  }
+  function openLb(i){
+    current = i; show(i);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  items.forEach(function(it, i){
+    it.addEventListener('click', function(){ openLb(i); });
+    it.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLb(i); }
+    });
+  });
+  document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); show(current - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); show(current + 1); });
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLb();
+    if(e.key === 'ArrowLeft') show(current - 1);
+    if(e.key === 'ArrowRight') show(current + 1);
+  });
+
+  /* Footer year */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
